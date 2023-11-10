@@ -1,13 +1,16 @@
+[build-system]
+requires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
 [tool.poetry]
-name = "pypi_template"
+name = "pypi_utils"
 version = "0.1.0"
 description = "a template for build python package"
-authors = ["lgf4591 <lgf4591@outlook.com>"]
+authors = [ "lgf4591 <lgf4591@outlook.com>",]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/lgf4591/pypi-template"
-repository = "https://github.com/lgf4591/pypi-template"
-
+homepage = "https://github.com/lgf4591/pypi_utils"
+repository = "https://github.com/lgf4591/pypi_utils"
 [[tool.poetry.source]]
 name = "aliyun"
 url = "https://mirrors.aliyun.com/pypi/simple"
@@ -19,9 +22,9 @@ url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
 priority = "primary"
 
 [tool.poetry.scripts]
-dev = "pypi_template.scripts:dev"
-lint = "pypi_template.scripts:pylint"
-fix = "pypi_template.scripts:fix"
+dev = "pypi_utils.scripts:dev"
+lint = "pypi_utils.scripts:pylint"
+fix = "pypi_utils.scripts:fix"
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -32,7 +35,4 @@ yapf = "^0.40.2"
 pytest = "^7.4.3"
 autopep8 = "^2.0.4"
 pylint = "^3.0.2"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+toml = "^0.10.2"
