@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "pypi_utils"
-version = "0.1.4"
+version = "0.1.5"
 description = "a template for build python package"
 authors = [ "lgf4591 <lgf4591@outlook.com>",]
 license = "MIT"

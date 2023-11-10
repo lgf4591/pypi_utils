@@ -10,6 +10,7 @@ class Github:
         "https://hub.gitmirror.com/", "https://ghproxy.com/"
     ]
     headers = {
+        "Authorization":"token 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",
         "User-Agent":
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.60"
     }

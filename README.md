@@ -33,7 +33,7 @@ git push origin v${version}
 
 ```powershell
 
-$version="0.1.4"
+$version="0.1.5"
 ((Get-Content -Path ./pypi_utils/__init__.py) -replace "__version__ = .*","__version__ = '$version'") | Set-Content -Path ./pypi_utils/__init__.py
 python main.py $version
 git add .
