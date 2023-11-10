@@ -25,7 +25,7 @@ load-plugins=
 # no Warning level messages displayed, use"--disable=all --enable=classes
 # --disable=W"
 #disable=
-disable=logging-not-lazy, line-too-long, trailing-whitespace, bare-except, broad-except, missing-docstring
+disable=logging-not-lazy, line-too-long, trailing-whitespace, bare-except, broad-except, missing-docstring, consider-using-with
 
 
 [REPORTS]
