@@ -28,14 +28,16 @@ def publish(version: str) -> None:
     with open('pyproject.toml', 'w', encoding="utf-8") as toml_file:
         toml.dump(config, toml_file)
         
-    run_command("git status")
-    run_command("git add .")
-    # run_command(f"git commit -m 'release v{version}'")
+    # run_command("git status")
+    # run_command("git add .")
+    run_command(f"git commit -m 'release v{version}'")
     # run_command(f"git tag v{version} -m 'release v{version}'")
     # run_command(f"git push origin v{version}")
 
 
 if __name__ == "__main__":
-    publish(sys.argv[1])
+    print(f"current project is {project_name}")
+    if len(sys.argv) > 1:
+        publish(sys.argv[1])
 
 # python main.py 0.1.2
