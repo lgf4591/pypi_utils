@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "pypi_template"
+version = "0.1.0"
+description = "a template for build python package"
+authors = ["lgf4591 <lgf4591@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/lgf4591/pypi-template"
+repository = "https://github.com/lgf4591/pypi-template"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple"
+priority = "default"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "primary"
+
+[tool.poetry.scripts]
+dev = "pypi_template.scripts:dev"
+lint = "pypi_template.scripts:pylint"
+fix = "pypi_template.scripts:fix"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typing-extensions = "^4.8.0"
+yapf = "^0.40.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+autopep8 = "^2.0.4"
+pylint = "^3.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
