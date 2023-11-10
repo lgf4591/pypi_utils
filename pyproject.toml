@@ -30,6 +30,7 @@ fix = "pypi_utils.scripts:fix"
 python = "^3.8"
 typing-extensions = "^4.8.0"
 yapf = "^0.40.2"
+requests = "^2.31.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.3"
